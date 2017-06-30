@@ -27,4 +27,10 @@ def crawl_site(url):
 
 
 #crawl_site("https://wikileaks.org/sony/docs/03_03/")
-crawl_site("https://wikileaks.org/sony/docs/03_02/")
+#crawl_site("https://wikileaks.org/sony/docs/03_02/")
+#crawl_site("https://wikileaks.org/sony/docs/01/")
+# NOT crawl_site("https://wikileaks.org/sony/docs/02/")
+# NOT crawl_site("https://wikileaks.org/sony/docs/03/")
+# NOT crawl_site("https://wikileaks.org/sony/docs/07/")
+# NOT crawl_site("https://file.wikileaks.org/file")
+

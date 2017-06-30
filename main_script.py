@@ -5,7 +5,7 @@ import occupations
 import os
 import send_invoice
 from time import sleep
-occ = load_occupations():
+occ = load_occupations()
 
 for oc in occ:
     counter = 0

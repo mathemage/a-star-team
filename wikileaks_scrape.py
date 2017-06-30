@@ -9,13 +9,16 @@ def get_wikileaks_list():
         i = 0
         for line in file:
             i += 1
-            if i < 8:
+            if i < 154:
                 continue
-            urls = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', line)
-            url = urls[0]
-            print(str(i)+":    "+url)
-            send_invoice(url)
-            sleep(2)
+            try:
+                urls = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', line)
+                url = urls[0]
+                print(str(i)+":    "+url)
+                send_invoice(url)
+                sleep(0.6)
+            except:
+                print("EXCEPTION")
 
 
 get_wikileaks_list()

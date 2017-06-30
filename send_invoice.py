@@ -26,8 +26,8 @@ def get_negatives():
     to_return = json.loads(r.data.decode('utf-8'))
     return to_return
 
-# send_invoice("https://www.cca.edu/sites/default/files/pdf/08/word-to-pdf.pdf")
-# positives = get_positives()
-# negatives = get_negatives()
-# print(positives)
-# print(negatives)
+#send_invoice("www.ms.mff.cuni.cz/~prochas7/test.pdf")
+#positives = get_positives()
+#negatives = get_negatives()
+#print(positives)
+#print(negatives)
